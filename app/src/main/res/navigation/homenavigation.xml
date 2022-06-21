@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homenavigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.demoframelayoutnavigation.home.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailFragment"
+        android:name="com.example.demoframelayoutnavigation.home.ui.homeDetailFragment"
+        android:label="fragment_home_detail"
+        tools:layout="@layout/fragment_home_detail" >
+        <action
+            android:id="@+id/action_homeDetailFragment_to_accountsFragment2"
+            app:destination="@id/homeCyclerFragemnt" />
+        <action
+            android:id="@+id/action_homeDetailFragment_to_homeCyclerFragemnt"
+            app:destination="@id/homeCyclerFragemnt" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cyclerItemWebFragemnt"
+        android:name="com.example.demoframelayoutnavigation.home.ui.cyclerItemWebFragemnt"
+        android:label="fragment_cycler_item_web_fragemnt"
+        tools:layout="@layout/fragment_cycler_item_web_fragemnt" >
+        <action
+            android:id="@+id/action_cyclerItemWebFragemnt_to_homeCyclerFragemnt"
+            app:destination="@id/homeCyclerFragemnt" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeCyclerFragemnt"
+        android:name="com.example.demoframelayoutnavigation.home.ui.HomeCyclerFragemnt"
+        android:label="fragment_home_cycler_fragemnt"
+        tools:layout="@layout/fragment_home_cycler_fragemnt" >
+        <action
+            android:id="@+id/action_homeCyclerFragemnt_to_cyclerItemWebFragemnt"
+            app:destination="@id/cyclerItemWebFragemnt" />
+        <action
+            android:id="@+id/action_homeCyclerFragemnt_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment" />
+    </fragment>
+</navigation>

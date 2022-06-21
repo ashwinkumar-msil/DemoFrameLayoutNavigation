@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnavigation"
+    app:startDestination="@id/mianViewpagerFragment">
+
+    <fragment
+        android:id="@+id/mianViewpagerFragment"
+        android:name="com.example.demoframelayoutnavigation.common.ui.MainViewpagerFragment"
+        android:label="fragment_mian_viewpager"
+        tools:layout="@layout/fragment_main_viewpager" >
+    </fragment>
+
+
+
+
+</navigation>

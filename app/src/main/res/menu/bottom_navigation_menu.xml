@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--TODO According to ASA-2209 we have hide activity tab. So we return value 1.To show activity give value 2
+    -->
+    <item
+        android:id="@+id/sparkFlutterFragment"
+        android:icon="@drawable/bottom_nav_home_selector"
+        android:title="@string/title_home"
+        />
+    <item
+            android:id="@+id/watchListActivitiesFragment"
+            android:icon="@drawable/bottom_nav_watchlist_selector"
+            android:title="@string/title_watchlist"
+             />
+    <item
+            android:id="@+id/ordersHoldingFragment"
+            android:icon="@drawable/bottom_nav_portfolio_selector"
+            android:title="@string/title_portfolio"
+             />
+
+    <!--<item
+            android:id="@+id/advisoryInvestofolioFragment"
+            android:icon="@drawable/bottom_nav_advisory_selector"
+            android:title="@string/title_advisory"
+             />-->
+    <item
+            android:id="@+id/accountFragment"
+            android:icon="@drawable/bottom_nav_profile_selector"
+            android:title="@string/title_profile"
+             />
+</menu>
